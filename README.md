@@ -11,9 +11,44 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
 ## Follow These Steps
 
 - Add ngx-toastr and sweetalert2 by using `npm i ngx-toastr sweetalert2`
+- Import ToastrService from ngx-toastr using `import { ToastrService } from 'ngx-toastr'`
 - Add following code into `app.component.ts`
    ```
-    showSuccessAlert() {
+ constructor(private toastrService: ToastrService) { }
+  // Toastr
+  showSuccess() {
+    this.toastrService.success('Operation completed successfully!', 'Success');
+  }
+
+  showError() {
+    this.toastrService.error('Something went wrong!', 'Error');
+  }
+
+  showInfo() {
+    this.toastrService.info('This is an information message', 'Info');
+  }
+
+  showWarning() {
+    this.toastrService.warning('This is a warning message', 'Warning');
+  }
+
+  showCustom() {
+    this.toastrService.show(
+      '<span style="color: #bd4147">Custom</span> <span style="color: #477abd">Toast</span>',
+      'Styled Message',
+      {
+        enableHtml: true,
+        toastClass: 'custom-toast-class',
+        positionClass: 'toast-bottom-center'
+      }
+    );
+  }
+
+  clearToasts() {
+    this.toastrService.clear();
+  }
+  // SweetAlert2  
+  showSuccessAlert() {
     Swal.fire({
       title: 'Success!',
       text: 'This is a success message.',
@@ -42,5 +77,5 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
     });
   }
   ```
-
+- Use these function in app.component.html file on button click.
 
