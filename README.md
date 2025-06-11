@@ -12,7 +12,8 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
 
 - Add ngx-toastr and sweetalert2 by using `npm i ngx-toastr sweetalert2`
 - Add following code into `app.component.ts`
-  - `showSuccessAlert() {
+   ```
+    showSuccessAlert() {
     Swal.fire({
       title: 'Success!',
       text: 'This is a success message.',
@@ -39,6 +40,7 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
         );
       }
     });
-  }` 
+  }
+  ```
 
 
