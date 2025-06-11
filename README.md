@@ -13,6 +13,7 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
 - Add ngx-toastr and sweetalert2 by using `npm i ngx-toastr sweetalert2`
 - Import ToastrService from ngx-toastr using `import { ToastrService } from 'ngx-toastr'`
 - Add following code into `app.component.ts`
+  
    ```
  constructor(private toastrService: ToastrService) { }
   // Toastr
@@ -77,5 +78,6 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
     });
   }
   ```
+
 - Use these function in app.component.html file on button click.
 
