@@ -16,7 +16,7 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
   
    ```
  constructor(private toastrService: ToastrService) { }
-  // Toastr
+ 
   showSuccess() {
     this.toastrService.success('Operation completed successfully!', 'Success');
   }
@@ -48,7 +48,7 @@ To get more help on SweetAlert2 check out the [SweetAlert2 - a beautiful, respon
   clearToasts() {
     this.toastrService.clear();
   }
-  // SweetAlert2  
+ 
   showSuccessAlert() {
     Swal.fire({
       title: 'Success!',
