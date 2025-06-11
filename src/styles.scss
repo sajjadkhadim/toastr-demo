@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+//@import "~ngx-toastr/toastr";
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Custom toast styles */
+.custom-toast-class {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #dee2e6;
+}
